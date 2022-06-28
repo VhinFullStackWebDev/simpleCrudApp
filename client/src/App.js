@@ -67,7 +67,8 @@ function App() {
         {movieList.map((val) => {
           return (
             <div key={val.id} className='card p-3 m-2'>
-              <h5 key={val.title}>Title: {val.title} Description: {val.description} </h5>
+              <h5>Title: {val.title}</h5>
+              <h6>Description: {val.description}</h6>
               <input placeholder='Edit title' onChange={(e)=>
                 setNewTitle(e.target.value)
               } />
